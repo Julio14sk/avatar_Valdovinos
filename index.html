@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarea Canvas</title>
+
+    <style type="text/css">
+        * {
+            margin: 0px;
+            padding: 0px;
+
+        }
+
+        canvas {
+            display: block;
+            background-color: #9c2cdd;
+        }
+
+        body {
+            background-color: #ffffff;
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <h1>Trabajo Julio Cesar Valdovinos Canvas</h1>
+
+
+    <canvas id="canvas" width="900" height="600"></canvas>
+
+    <script>
+
+        var canvas = document.getElementById("canvas");
+        ctx = canvas.getContext('2d');
+
+        
+        
+        ctx.fillStyle = 'black'
+        ctx.beginPath();
+        ctx.arc(295, 450, 40, 0, Math.PI,false);
+        ctx.fill();
+        ctx.stroke();
+
+
+        ctx.fillStyle = '#CE8777'
+        ctx.fillRect(280, 195, 30, 20);
+        ctx.strokeRect(280, 195, 30, 20);
+
+        ctx.fillStyle = '#CE8777'
+        ctx.beginPath();
+        ctx.arc(295, 150, 50, 0, 2 * Math.PI);
+        ctx.fill();
+        ctx.stroke();
+
+        ctx.fillStyle = 'black'
+        ctx.beginPath();
+        ctx.arc(295, 150, 50, 10.5, 2 * Math.PI);
+        ctx.fill();
+        ctx.stroke();
+
+        ctx.fillStyle = 'black'
+        ctx.beginPath();
+        ctx.arc(295, 150, 50, 9.5, 1.5 * Math.PI);
+        ctx.fill();
+        ctx.stroke();
+
+        ctx.fillStyle = 'white'
+        ctx.beginPath();
+        ctx.arc(280, 150, 10, 0,  Math.PI,false);
+        ctx.fill();
+        ctx.stroke();
+
+        ctx.fillStyle = 'white'
+        ctx.beginPath();
+        ctx.arc(320, 150, 10, 0, 2 * Math.PI);
+        ctx.fill();
+        ctx.stroke();
+
+        ctx.fillStyle = 'white'
+        ctx.beginPath();
+        ctx.arc(300, 180, 10, 5.8, 1 * Math.PI);
+        ctx.fill();
+        ctx.stroke();
+
+        ctx.fillStyle = '#CE8777'
+        ctx.fillRect(240, 220, 70, 100);
+        ctx.strokeRect(240, 220, 70, 100);
+
+        ctx.fillStyle = 'black'
+        ctx.fillRect(260, 210, 70, 130);
+        ctx.strokeRect(260, 210, 70, 130);
+
+        ctx.fillStyle = 'black'
+        ctx.fillRect(240, 220, 90, 70);
+        ctx.strokeRect(240, 220, 90, 90);
+
+        ctx.fillStyle = '#CE8777'
+        ctx.fillRect(330, 220, 20, 90);
+        ctx.strokeRect(300, 220, 50, 100);
+
+        ctx.fillStyle = 'black'
+        ctx.fillRect(300, 220, 50, 70);
+        ctx.strokeRect(300, 220, 50, 100);
+
+        ctx.fillStyle = '#2D373B'
+        ctx.fillRect(298, 435, 30, 30);
+        ctx.strokeRect(298, 435, 30, 30);
+
+        ctx.fillStyle = '#2D373B'
+        ctx.fillRect(265, 435, 30, 30);
+        ctx.strokeRect(265, 435, 30, 30);
+
+        ctx.fillStyle = '#3396B9'
+        ctx.fillRect(260, 320, 70, 130);
+        ctx.strokeRect(260, 320, 70, 130);
+
+        ctx.fillStyle = '#252A2C'
+        ctx.beginPath();
+        ctx.arc(279, 465, 15, 0, Math.PI, true);
+        ctx.fill();
+        ctx.stroke();
+
+        ctx.fillStyle = '#252A2C'
+        ctx.beginPath();
+        ctx.arc(313, 465, 15, 0, Math.PI, true);
+        ctx.fill();
+        ctx.stroke();
+
+        ctx.fillStyle = '#CE8777'
+        ctx.beginPath();
+        ctx.arc(337, 320, 15, 0, 2 * Math.PI);
+        ctx.fill();
+        ctx.stroke();
+
+        ctx.fillStyle = '#CE8777'
+        ctx.beginPath();
+        ctx.arc(250, 320, 15, 0, 2 * Math.PI);
+        ctx.fill();
+        ctx.stroke();
+
+        ctx.beginPath();
+        ctx.moveTo(295, 450);
+        ctx.lineTo(295, 300);
+        ctx.closePath();
+        ctx.stroke();
+
+
+    </script>
+
+</body>
+
+</html>
